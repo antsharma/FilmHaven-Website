@@ -30,6 +30,7 @@ app.post('/api/contact', bodyParser.urlencoded({extended:false}), (req , res)=>{
     const UserName=req.body.name;
     const userEmail=req.body.email;
     const UserMessage=req.body.message; 
+    // console.log(UserName);
     const mailOptions={
         from:{
           name:`${UserName}`,
